@@ -1,0 +1,28 @@
+[submodule "catkin_ws/src/camera_pose_node"]
+	path = catkin_ws/src/camera_pose_node
+	url = https://github.com/linny-tech/camera_pose_node.git
+	branch = main
+[submodule "catkin_ws/src/ego-planner"]
+	path = catkin_ws/src/ego-planner
+	url = https://github.com/linny-tech/ego-planner.git
+	branch = main
+[submodule "catkin_ws/src/FAST_LIO"]
+	path = catkin_ws/src/FAST_LIO
+	url = https://github.com/linny-tech/FAST_LIO.git
+	branch = main
+[submodule "catkin_ws/src/livox_ros_driver2"]
+	path = catkin_ws/src/livox_ros_driver2
+	url = https://github.com/linny-tech/livox_ros_driver2.git
+	branch = main
+[submodule "catkin_ws/src/Mid360_imu_sim"]
+	path = catkin_ws/src/Mid360_imu_sim
+	url = https://github.com/linny-tech/Mid360_imu_sim.git
+	branch = main
+[submodule "catkin_ws/src/offboard_hover"]
+	path = catkin_ws/src/offboard_hover
+	url = https://github.com/linny-tech/offboard_hover.git
+	branch = main
+[submodule "catkin_ws/src/ego_gazebo_worlds"]
+	path = catkin_ws/src/ego_gazebo_worlds
+	url = https://github.com/linny-tech/ego_gazebo_worlds.git
+	branch = main
