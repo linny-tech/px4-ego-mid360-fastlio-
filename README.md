@@ -15,7 +15,7 @@ git clone --recurse-submodules https://github.com/linny-tech/px4-ego-mid360-fast
 git submodule update --init --recursive
 ```
 
-## 住宅小区屋顶地图
+## 三角坡屋顶住宅小区地图
 
 仅启动 50×50×10 米住宅地图：
 
@@ -29,7 +29,7 @@ roslaunch ego_gazebo_worlds residential_map_only.launch
 roslaunch ego_gazebo_worlds px4_mid360_residential.launch
 ```
 
-无人机默认从西侧边缘 `(-22, 0, 0.2)` 起飞，中间道路保持贯通。
+地图为 50×50×10 米，住宅高度在 4–10 米之间错落排列；三角坡屋顶和落地支柱均使用长方体，不含圆柱。无人机默认从西侧边缘 `(-22, 0, 0.2)` 起飞，中间道路保持贯通。
 
 ## 独立功能包仓库
 
