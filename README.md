@@ -15,6 +15,22 @@ git clone --recurse-submodules https://github.com/linny-tech/px4-ego-mid360-fast
 git submodule update --init --recursive
 ```
 
+## 住宅小区屋顶地图
+
+仅启动 50×50×10 米住宅地图：
+
+```bash
+roslaunch ego_gazebo_worlds residential_map_only.launch
+```
+
+启动 PX4、MID360 和住宅地图：
+
+```bash
+roslaunch ego_gazebo_worlds px4_mid360_residential.launch
+```
+
+无人机默认从西侧边缘 `(-22, 0, 0.2)` 起飞，中间道路保持贯通。
+
 ## 独立功能包仓库
 
 - [camera_pose_node](https://github.com/linny-tech/camera_pose_node)
