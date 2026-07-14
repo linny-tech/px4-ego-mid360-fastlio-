@@ -31,6 +31,22 @@ roslaunch ego_gazebo_worlds px4_mid360_residential.launch
 
 地图为 50×50×10 米，住宅高度在 4–10 米之间错落排列；三角坡屋顶和落地支柱均使用长方体，不含圆柱。无人机默认从西侧边缘 `(-22, 0, 0.2)` 起飞，中间道路保持贯通。
 
+## 弯曲狭窄隧道地图
+
+仅启动 S 形隧道地图：
+
+```bash
+roslaunch ego_gazebo_worlds tunnel_map_only.launch
+```
+
+启动 PX4、MID360 和隧道地图：
+
+```bash
+roslaunch ego_gazebo_worlds px4_mid360_tunnel.launch
+```
+
+隧道位于 50×50×10 米范围内，包含 8 段、7 个明显转弯、低顶和侧壁凸起。无人机默认从 `(-22, -8, 0.3)` 起飞。
+
 ## 独立功能包仓库
 
 - [camera_pose_node](https://github.com/linny-tech/camera_pose_node)
