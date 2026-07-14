@@ -1,0 +1,23 @@
+# Catkin build outputs
+catkin_ws/build/
+catkin_ws/devel/
+catkin_ws/install/
+catkin_ws/log/
+catkin_ws/build_isolated/
+catkin_ws/devel_isolated/
+catkin_ws/install_isolated/
+catkin_ws/.catkin_tools/
+catkin_ws/src/**/build/
+
+# ROS runtime data
+*.bag
+*.bag.active
+catkin_ws/src/FASTLIO/Log/*.txt
+
+# Python/editor caches
+__pycache__/
+*.py[cod]
+*.swp
+*~
+.vscode/
+.idea/

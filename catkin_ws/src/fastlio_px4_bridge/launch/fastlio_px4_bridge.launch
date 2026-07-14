@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="raw_odom_topic" default="/Odometry"/>
+  <arg name="enu_odom_topic" default="/Odometry_enu"/>
+  <arg name="vision_pose_topic" default="/mavros/vision_pose/pose"/>
+  <arg name="axis_mode" default="optical_to_enu"/>
+  <arg name="zero_origin" default="true"/>
+  <arg name="zero_initial_yaw" default="true"/>
+  <arg name="vision_rate" default="30.0"/>
+  <arg name="odom_timeout" default="0.5"/>
+
+  <node pkg="fastlio_px4_bridge"
+        type="fastlio_px4_bridge_node"
+        name="fastlio_px4_bridge_node"
+        output="screen">
+    <param name="raw_odom_topic" value="$(arg raw_odom_topic)"/>
+    <param name="enu_odom_topic" value="$(arg enu_odom_topic)"/>
+    <param name="vision_pose_topic" value="$(arg vision_pose_topic)"/>
+    <param name="axis_mode" value="$(arg axis_mode)"/>
+    <param name="zero_origin" value="$(arg zero_origin)"/>
+    <param name="zero_initial_yaw" value="$(arg zero_initial_yaw)"/>
+    <param name="vision_rate" value="$(arg vision_rate)"/>
+    <param name="odom_timeout" value="$(arg odom_timeout)"/>
+  </node>
+</launch>

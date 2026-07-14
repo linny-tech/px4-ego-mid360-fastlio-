@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="odom_topic" default="/Odometry"/>
+  <arg name="ego_cmd_topic" default="/planning/pos_cmd"/>
+  <arg name="hover_height" default="1.5"/>
+  <arg name="odom_timeout" default="0.5"/>
+  <arg name="ego_timeout" default="0.5"/>
+  <arg name="prestream_time" default="2.0"/>
+  <arg name="request_interval" default="1.0"/>
+  <arg name="hover_tolerance" default="0.15"/>
+  <arg name="hover_stable_time" default="2.0"/>
+  <arg name="ego_command_is_relative" default="false"/>
+  <!-- false: use the separate camera_pose_node bridge from the reference repo -->
+  <arg name="publish_vision_pose" default="false"/>
+
+  <node pkg="offboard_hover"
+        type="offboard_hover_node"
+        name="offboard_hover_node"
+        output="screen">
+    <param name="odom_topic" value="$(arg odom_topic)"/>
+    <param name="ego_cmd_topic" value="$(arg ego_cmd_topic)"/>
+    <param name="hover_height" value="$(arg hover_height)"/>
+    <param name="odom_timeout" value="$(arg odom_timeout)"/>
+    <param name="ego_timeout" value="$(arg ego_timeout)"/>
+    <param name="prestream_time" value="$(arg prestream_time)"/>
+    <param name="request_interval" value="$(arg request_interval)"/>
+    <param name="hover_tolerance" value="$(arg hover_tolerance)"/>
+    <param name="hover_stable_time" value="$(arg hover_stable_time)"/>
+    <param name="ego_command_is_relative" value="$(arg ego_command_is_relative)"/>
+    <param name="publish_vision_pose" value="$(arg publish_vision_pose)"/>
+  </node>
+</launch>
